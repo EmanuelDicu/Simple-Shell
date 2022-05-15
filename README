@@ -1,0 +1,25 @@
+Obiectiv: 
+  Implementarea unui shell minimal cu utilitare
+de baza asemanatoare functiilor standard din linux precum 
+touch, mkdir, ls, rm, rmdir, cd, treepwd, stop, mv.
+
+Pentru rulare, se compileaza fisierul Makefile si apoi se 
+ruleaza executabilul "./tema", apoi executabilul se foloseste
+ca un shell obisnuit.
+
+Structurarea codului: 
+-tema1.c: continue functia main care proceseaza tot 
+    inputul de la tastatura si executa operatiile necesare
+-commands.c: contine implementarile tuturor functiilor
+    de modificare, afisare, adaugare sau stergere de fisiere
+    si directoare necesare in tema
+-file_utils.c: contine functii utilitare ajutatoare necesare
+    operatiilor cu fisiere
+-dir_utils.c: contine functii utilitare ajutatoare necesare
+    operatiilor cu directoare
+-data_types.h: header ce contine structurile de date (fisiere,
+    si directoare) folosite in tema
+
+Documentatia codului:
+  Deasupra fiecarei functii este scrisa explicatia detaliata 
+a codului si a parametrilor folosind javadoc.
